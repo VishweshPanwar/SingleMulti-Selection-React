@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+🚀 Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based Accordion component that showcases:
 
-## Available Scripts
+✅ Single Selection Mode – Only one item can be expanded at a time.
 
-In the project directory, you can run:
+✅ Multi Selection Mode – Multiple items can be expanded simultaneously.
 
-### `npm start`
+✅ Smooth Animations – Enhances user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✅ Responsive Design – Works across all devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📺 Preview
 
-### `npm test`
+Single Selection
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Multi Selection
 
-### `npm run build`
+Animated Effect
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🛠 Installation & Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+git clone https://github.com/yourusername/react-accordion.git
 
-### `npm run eject`
+Navigate to the project folder:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+cd react-accordion
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start the development server:
 
-## Learn More
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open http://localhost:3000 in your browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🔧 How It Works
 
-### Code Splitting
+Click on an accordion item to expand/collapse it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Toggle between Single Selection and Multi Selection modes.
 
-### Analyzing the Bundle Size
+Uses React’s useState hook to manage the state.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🌟 Features
 
-### Making a Progressive Web App
+Dynamic animations using CSS transitions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Fully responsive design.
 
-### Advanced Configuration
+Clean, structured, and reusable code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🎨 Customization
 
-### Deployment
+Modify style.css to tweak colors, fonts, and animations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Adjust data.js to add more questions and answers.
 
-### `npm run build` fails to minify
+👨‍👩‍👦 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to fork this repository, improve the UI, and submit a pull request!
+
+📝 License
+
+This project is open-source under the MIT License.

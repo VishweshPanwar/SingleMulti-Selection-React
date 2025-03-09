@@ -1,0 +1,180 @@
+/* 🌌 Wrapper - Smooth Animated Background */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  background: linear-gradient(135deg, #10002b, #240046);
+  animation: bgAnimation 10s infinite alternate ease-in-out;
+}
+
+/* 🎨 Background Animation */
+@keyframes bgAnimation {
+  0% {
+    background: linear-gradient(135deg, #10002b, #240046);
+  }
+  100% {
+    background: linear-gradient(135deg, #240046, #5a189a);
+  }
+}
+
+/* 📜 Accordion Container - Glassmorphism */
+.accordion {
+  width: 500px;
+  padding: 18px;
+  border-radius: 14px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 🔥 Accordion Items - Neon & Depth Effect */
+.item {
+  margin-bottom: 12px;
+  padding: 15px 22px;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* 🟣 Glowing Effect on Hover */
+.item:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 0, 150, 0.3);
+}
+
+/* 🟡 Animated Border Effect */
+.item::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    #ff6b6b,
+    #f56a79,
+    #ffcf3b,
+    #ff3e3e,
+    #d72638
+  );
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.item:hover::before {
+  opacity: 1;
+}
+
+/* 🌈 Dynamic Background Changes */
+.item:nth-child(odd) {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+.item:nth-child(even) {
+  background: linear-gradient(135deg, #8e44ad, #c0392b);
+}
+
+/* 🟢 Opened Item - Sexy Scale Effect */
+.item.open {
+  background: linear-gradient(135deg, #ff3cac, #562b7c);
+  transform: scale(1.05);
+}
+
+/* 📢 Title - Smooth Color Transition */
+.title {
+  color: #e0e0ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* 🔺 Expand/Collapse Icon */
+.title span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcf3b;
+  transition: transform 0.2s ease-in-out;
+}
+
+.item.open .title span {
+  transform: rotate(180deg);
+}
+
+/* 🔥 Content Reveal - Smooth Fade & Slide */
+.content {
+  color: #cfcff0;
+  font-size: 17px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  line-height: 1.5;
+  margin-top: 10px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s ease-in-out;
+}
+
+.item.open .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🌊 Ripple Effect on Click */
+.item::after {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: 50%;
+  left: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.4) 10%,
+    transparent 70%
+  );
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+}
+
+.item:active::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* 🔥 Sexy Button */
+.toggle-button {
+  background: linear-gradient(135deg, #ff6b81, #f037a5);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+
+/* 🟠 Button Hover Effect */
+.toggle-button:hover {
+  background: linear-gradient(135deg, #f037a5, #8226c7);
+  transform: scale(1.05);
+}
+
+/* 🔴 Active State */
+.toggle-button.active {
+  background: linear-gradient(135deg, #ff3e3e, #d72638);
+}
